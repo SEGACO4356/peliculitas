@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./error.module.css";
+
 const Error = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const Error = () => {
       <a href="/" className={style.a} > <span>Go back</span></a>
       </div>
       </section>
+
     </>
   );
 };

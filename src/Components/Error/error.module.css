@@ -8,7 +8,11 @@
     flex-direction: column;
 }
 .section{
-    background-color: rgb(2, 2, 46);
+    background: url("../../images/Astronauta.gif") no-repeat center center fixed ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -37,6 +41,10 @@
 .a{
     color:aliceblue;
     font-size: 2rem;
+    transition: all .2s ease;
+}
+.a:hover{
+    transform: rotate(8deg);
 }
 .a > span{
     animation: glow2 2s ease-in-out infinite;
