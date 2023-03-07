@@ -18,8 +18,12 @@ const Home = () => {
   return (
     <>
     <main className={style.main}>
-      <div>
+      <div className={style.direction}>
+         <h2 className={style.h2}>
+         Most Popular movies
+          </h2>
         {movies.data.results.map((k, index) => (
+         
            <div className={style.container_card}>
           <div className={style.card} key={index}>
             <h2>{k.title}</h2>

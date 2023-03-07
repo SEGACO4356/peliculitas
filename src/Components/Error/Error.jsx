@@ -7,7 +7,7 @@ const Error = () => {
       <section className={style.section}>
         <div className={style.container}>
           <p className={style.p}>
-            <span>Look like you're lost in space</span>
+            <span>Looks like you're lost in space</span>
           </p>
           <h1 className={style.h1}>
             <span>4</span>

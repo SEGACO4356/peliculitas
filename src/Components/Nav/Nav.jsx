@@ -1,8 +1,17 @@
+import { useState, useEffect } from "react";
 import style from "./nav.module.css";
 import { NavLink } from "react-router-dom";
 import { FaHome, FaUser } from "react-icons/fa";
 
 function Nav() {
+
+  const [nav, setNav] = useState ();
+
+  const scroll = () =>{
+    
+  }
+ 
+
   return (
     <nav className={style.nav}>
       <div className={style.container_icons}>
