@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import Loading from '../Loading/Loading'
-import { getPopular } from "../../Services/axios.js";
+import { getMovies } from "../../Services/axios.js";
 
 const Home = () => {
 
   const [movies, setMovies] = useState(0)
     useEffect(()=> {
       const get = async () =>{
-        const res = await getPopular()
+        const res = await getMovies.getPopular();
         setMovies(res)
       }
      get()
@@ -17,6 +17,7 @@ const Home = () => {
     }
   return (
     <>
+
     <div>{movies.data.results.map((k, index)=> <h2>{k.title}</h2>)}</div>
     </>
   )
