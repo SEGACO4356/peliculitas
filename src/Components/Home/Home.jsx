@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Loading from "../Loading/Loading";
 import { getMovies } from "../../Services/axios.js";
+import style from "./home.module.css"
 
 const Home = () => {
   const [movies, setMovies] = useState(0);
@@ -16,14 +17,19 @@ const Home = () => {
   }
   return (
     <>
+    <main className={style.main}>
       <div>
         {movies.data.results.map((k, index) => (
-          <div key={index}>
+           <div className={style.container_card}>
+          <div className={style.card} key={index}>
             <h2>{k.title}</h2>
+            <img className={style.img} src={`https://www.themoviedb.org/t/p/w220_and_h330_face${k.poster_path}`} alt="" />
             <p>{k.overview}</p>
+            </div>
           </div>
         ))}
       </div>
+      </main>
     </>
   );
 };
