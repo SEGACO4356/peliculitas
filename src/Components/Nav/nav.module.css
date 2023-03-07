@@ -10,6 +10,9 @@
     flex-direction: row;
     position: fixed;
 }
+nav.abajo{
+    background: transparent;
+}
 .container_icons{
     display: flex;
     justify-content: center;

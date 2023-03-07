@@ -1,7 +1,7 @@
 *{
     user-select: none;
 }.main{
-    background-color: rgb(0, 21, 82);
+    background-color:rgb(8, 0, 48) ;
     width: 100%;
     height: 100%;
 }
@@ -13,7 +13,8 @@
     align-self: center;
     padding-left: 2rem;
     animation: glow 3s ease-in infinite ;
-    width: 30vh;
+    width: 100vh;
+    font-size: 2.5rem;
 }
 @keyframes glow{
     0%, 100%{
@@ -37,7 +38,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: transparent;
+    background-color: rgb(0, 21, 82);
     width: 100vh;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -46,7 +47,6 @@
     
 }
 .container_card{
-  padding-left: 2rem;
   padding-top: 1rem;
   display: flex;
   flex-direction: row;
@@ -55,4 +55,30 @@
 .img{
     border-radius: 10px;
     width: 28%;
+}
+.p{
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+.h22{
+
+    padding-top: 5rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-left: 2rem;
+    animation: glow1 2s ease-in infinite ;
+    width: 100vh;
+    font-size: 2.5rem;
+}
+@keyframes glow1{
+    0%, 100%{
+        text-shadow: 0px 0px 10px;
+        color:rgb(118, 0, 245) ;
+    }
+    10%, 90%{
+        text-shadow: none;
+        color: aliceblue ;
+    }
 }

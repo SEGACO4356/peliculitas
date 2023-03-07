@@ -4,7 +4,7 @@ import { getMovies } from "../../Services/axios.js";
 import style from "./home.module.css"
 
 const Home = () => {
-  const [movies, setMovies] = useState(0);
+const [movies, setMovies] = useState(0);
   useEffect(() => {
     const get = async () => {
       const res = await getMovies.getPopular();
@@ -26,9 +26,9 @@ const Home = () => {
          
            <div className={style.container_card}>
           <div className={style.card} key={index}>
-            <h2>{k.title}</h2>
+            <h2 className={style.h22}>{k.title}</h2>
             <img className={style.img} src={`https://www.themoviedb.org/t/p/w220_and_h330_face${k.poster_path}`} alt="" />
-            <p>{k.overview}</p>
+            <p className={style.p}>{k.overview}</p>
             </div>
           </div>
         ))}
