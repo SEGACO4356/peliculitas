@@ -5,8 +5,10 @@ import { FaHome, FaUser } from "react-icons/fa";
 function Nav() {
   return (
     <nav className={style.nav}>
-      <Link icon={<FaHome />} to="/" text="Home" />
-      <Link icon={<FaUser />} to="/registro" text="Registro" />
+      <div className={style.container_icons}>
+      <Link icon={<FaHome  className={style.home}/>} to="/" text="Home" />
+      <Link icon={<FaUser  className={style.user}/>} to="/registro" text="Registro" />
+      </div>
     </nav>
   );
 }
