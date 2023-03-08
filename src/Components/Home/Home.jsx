@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Loading from "../Loading/Loading";
-import { getMovies } from "../../Services/axios.js";
+import { getPopular } from "../../Services/axios.js";
 import style from "./home.module.css"
 
 const Home = () => {
 const [movies, setMovies] = useState(0);
   useEffect(() => {
     const get = async () => {
-      const res = await getMovies.getPopular();
+      const res = await getPopular();
       setMovies(res);
     };
     get();

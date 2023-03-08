@@ -4,10 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 const Home = lazy(() => import("./Components/Home/Home"));
-const Login = lazy(() => import("./Components/Login/Login"));
-const Registro = lazy(() => import("./Components/Registro/Registro"));
 const Nav = lazy(() => import("./Components/Nav/Nav"));
 const Error = lazy(() => import("./Components/Error/Error"));
+const Now = lazy (()=> import("./Components/Now/Now"))
 
 function App() {
   return (
@@ -17,8 +16,7 @@ function App() {
         <Suspense fallback={<Loading />}>
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/registro" element={<Registro />}></Route>
-            <Route path="/login" element={<Login />}></Route>
+            <Route path="/now" element={<Now />}></Route>
             <Route path="*" element={<Error />}></Route>
           </Routes>
         </Suspense>

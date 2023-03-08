@@ -1,6 +1,6 @@
 import style from "./nav.module.css";
 import { NavLink } from "react-router-dom";
-import { FaHome, FaUser } from "react-icons/fa";
+import { FaHome, FaFastForward } from "react-icons/fa";
 
 function Nav() {
 
@@ -10,7 +10,8 @@ function Nav() {
     <nav className={style.nav}>
       <div className={style.container_icons}>
       <Link icon={<FaHome  className={style.home}/>} to="/" text="Home" />
-      <Link icon={<FaUser  className={style.user}/>} to="/registro" text="Sign Up" />
+      <Link icon={<FaFastForward className={style.now}/>} to="/now" text="Now" />
+      
       </div>
     </nav>
   );
