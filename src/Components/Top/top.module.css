@@ -4,8 +4,32 @@
 .main{
     height: 100%;
     width: 100%;
+    background-color: rgb(26, 26, 26);
 }
+.container_card{
+    padding-top: 6rem;
+    padding-left: 3rem;
 
+}
 .card{
-    
+    background-color: rgb(124, 124, 124);
+    width: 55vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    text-align: justify;
+    box-shadow: 0px 0px 10px 10px;
+}
+.img{
+    border-radius: 10px;
+    width: 15rem;
+}
+.title{
+    color: rgb(0, 0, 0);
+}
+.p{
+    color: black;
 }

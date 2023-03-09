@@ -1,6 +1,6 @@
 import style from "./nav.module.css";
 import { NavLink } from "react-router-dom";
-import { FaHome, FaFastForward } from "react-icons/fa";
+import { FaHome, FaFastForward, FaSortAmountUpAlt} from "react-icons/fa";
 
 function Nav() {
 
@@ -11,6 +11,7 @@ function Nav() {
       <div className={style.container_icons}>
       <Link icon={<FaHome  className={style.home}/>} to="/" text="Home" />
       <Link icon={<FaFastForward className={style.now}/>} to="/now" text="Now" />
+      <Link  icon={<FaSortAmountUpAlt className={style.top}/>} to="/top" text="Top" />
       
       </div>
     </nav>
