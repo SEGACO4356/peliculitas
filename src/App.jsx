@@ -3,6 +3,7 @@ import Loading from "./Components/Loading/Loading";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Top from "./Components/Top/Top";
+import Popular from "./Components/Popular/Popular";
 
 const Home = lazy(() => import("./Components/Home/Home"));
 const Nav = lazy(() => import("./Components/Nav/Nav"));
@@ -17,6 +18,7 @@ function App() {
         <Suspense fallback={<Loading />}>
           <Routes>
             <Route path="/" element={<Home />}></Route>
+            <Route path="/popular" element={<Popular />}></Route>
             <Route path="/now" element={<Now />}></Route>
             <Route path="/top" element={<Top />}></Route>
             <Route path="*" element={<Error />}></Route>
