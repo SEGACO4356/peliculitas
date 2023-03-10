@@ -20,7 +20,6 @@ const Now = () => {
   return (
     <>
     <main className={style.main}> 
-
         {now.data.results.map((k, index) => (  
          <div className={style.container_card}>
         <div className={style.card} key={index}>
