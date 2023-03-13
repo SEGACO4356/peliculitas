@@ -38,7 +38,21 @@ width: 100vh;
 }
 .upcomming{
     color: aliceblue;
-    font-size: 20px;
+    font-size: 25px;
+    animation: glow2 5s ease-in infinite;
+    position:relative;
+}
+@keyframes glow2{
+    0%, 100%{
+        text-shadow: 0px 6px 5px;
+        color: rgb(0, 255, 221);
+        transform: rotateY(9deg);
+    }
+    10%, 90%{
+        text-shadow: none;
+        color: aliceblue;
+        transform: rotateY(0deg);
+    }
 }
 .container_card{
     padding-left: 2rem;
@@ -46,19 +60,18 @@ width: 100vh;
 .card{
     background-color: rgb(26, 49, 57);
     width: 25vw;
-    height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
    flex-direction: column;
    margin-top: 2rem;
+   margin-bottom: 2rem;
    border-radius: 20px;
    
 
 }
 
 .title{
-    padding-top: 2rem;
     color: aliceblue;
     text-align: center;
 }
