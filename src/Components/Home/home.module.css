@@ -2,7 +2,7 @@
     user-select: none;
 }
 .main{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: rgb(25, 25, 25);
 }
@@ -32,12 +32,40 @@
    }
 }
 .img{
- border-radius: 10px;
-    height: 50px;
-    width: 50px;
+ border-radius: 90px;
+width: 100vh;
 
 }
-.img1{
-    height: 25vh;
+.upcomming{
+    color: aliceblue;
+    font-size: 20px;
+}
+.container_card{
+    padding-left: 2rem;
+}
+.card{
+    background-color: rgb(26, 49, 57);
     width: 25vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+   margin-top: 2rem;
+   border-radius: 20px;
+   
+
+}
+
+.title{
+    padding-top: 2rem;
+    color: aliceblue;
+    text-align: center;
+}
+.img1{
+    border-radius: 50px;
+}
+.overview{
+    color: aliceblue;
+    text-align: center;
 }
