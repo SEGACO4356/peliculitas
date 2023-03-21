@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Loading from "../Loading/Loading";
+import Loading from "../../Components/Loading/Loading";
 import { getPopular } from "../../Services/axios.js";
 import style from "./popular.module.css"
 

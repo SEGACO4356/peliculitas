@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import style from "./now.module.css"
 import { getNow } from '../../Services/axios.js'
-import Loading from '../Loading/Loading';
+import Loading from '../../Components/Loading/Loading';
 
 const Now = () => {
 

@@ -14,8 +14,7 @@
 .card{
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(124,124,124,1) 100%, rgba(0,212,255,1) 100%);
-    width: 25vw;
-    height: 70vh;
+    width: 30vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,8 +28,10 @@
     width: 15rem;
 }
 .title{
-    color: rgb(0, 0, 0);
+    text-align: center;
+    color: rgb(255, 255, 255);
 }
 .p{
     color: rgb(255, 255, 255);
+    text-align: center;
 }

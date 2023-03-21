@@ -2,8 +2,9 @@ import {useEffect, useState} from "react";
 import { getUpcoming } from "../../Services/axios";
 import style from "./home.module.css";
 import img from "../../images/Fondo.jpg";
-import Loading from "../Loading/Loading";
+import Loading from "../../Components/Loading/Loading";
 const Home = () => {
+
   const [upcom, setUpcom] = useState (0);
   useEffect(()=>{
     const get = async () =>{
@@ -39,9 +40,7 @@ const Home = () => {
               <p className={style.overview}>{k.overview}</p>
             </div>
             </div>
-            
-           
-          ))}
+            ))}
       </main>
     </>
   );

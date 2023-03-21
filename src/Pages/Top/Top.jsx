@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getTop } from "../../Services/axios.js";
-import Loading from "../Loading/Loading.jsx";
+import Loading from "../../Components/Loading/Loading.jsx";
 import style from "./top.module.css";
 
 const Top = () => {
