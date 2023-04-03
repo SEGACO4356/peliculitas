@@ -9,12 +9,13 @@
 .container_card{
     padding-top: 6rem;
     padding-left: 3rem;
-
+    display: flex;
+    justify-content: center;
 }
 .card{
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(124,124,124,1) 100%, rgba(0,212,255,1) 100%);
-    width: 30vw;
+    width: 35vw;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -25,7 +25,7 @@ function App() {
             <Route path="*" element={<Error />}></Route>
           </Routes>
         </Suspense>
-        <Footer />
+      
       </Router>
     </>
   );
