@@ -28,12 +28,12 @@ const Home = () => {
           </p>
             <img className={style.img} src={img} alt="" />
         </div>
-   
+        <p className={style.upcomming}>Upcomming</p>
           
           {upcom.data.results.map((k, index)=>(
             
             <div className={style.container_card}>
-              <p className={style.upcomming}>Upcomming</p>
+              
             <div className={style.card} key={index}>
               <h2 className={style.title}>{k.title}</h2>
               <img className={style.img1} src={`https://www.themoviedb.org/t/p/w220_and_h330_face${k.poster_path}`} alt="" />
