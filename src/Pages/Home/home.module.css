@@ -86,7 +86,7 @@ width: 100vh;
     text-align: center;
 }
 
-@media (max-width:375px) {
+@media (max-width:370px) {
     .p{
         font-size: 1rem;
         padding-left: .5rem;

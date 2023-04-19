@@ -81,7 +81,7 @@
         color: aliceblue ;
     }
 }
-@media (max-width:375px) {
+@media (max-width:370px) {
     .main{
         width: 100%;
     }
