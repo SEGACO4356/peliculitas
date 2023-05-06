@@ -86,7 +86,7 @@ width: 100vh;
     text-align: center;
 }
 
-@media (max-width:370px) {
+@media (max-width:320px) {
     .p{
         font-size: 1rem;
         padding-left: .5rem;
@@ -140,6 +140,9 @@ width: 100vh;
     .upcomming{
         display: flex;
         justify-content: center;
+        padding: 0;
+    }
+    .container_card{
         padding: 0;
     }
 }
