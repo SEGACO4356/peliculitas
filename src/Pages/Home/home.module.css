@@ -90,8 +90,21 @@ width: 100vh;
 }
 @media (max-width:768px) {
     .p{
-        font-size: 0.7rem;
-        
+        font-size: 1.2rem;
+        padding-left: 1rem;
+        animation-duration: 3s;
+        animation-name: slide;
+        animation-iteration-count: initial;
+    }
+    @keyframes slide {
+        from{
+            margin-left: 100%;
+            width: 300%;
+        }
+        to{
+            margin-left: 0%;
+            width: 100%;
+        }
     }
     .img{
         width: 100vw;
