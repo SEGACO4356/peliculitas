@@ -90,17 +90,18 @@ width: 100vh;
 }
 @media (max-width:768px) {
     .p{
-        font-size: 1.3rem;
+        font-size: 0.7rem;
+        
     }
     .img{
         width: 100vw;
         border-radius: 0;
     }
     .card{
-        width: 80vw;
-        height: 70vh;
+        min-width: 80vw;
+        min-height: 70vh;
         background-color: rgb(15, 38, 55);
-        padding: 0;
+        overflow: scroll;
     }
     .img1{
         width: 50vw;
