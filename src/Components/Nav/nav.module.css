@@ -11,6 +11,7 @@
     flex-direction: row;
     position: fixed;
     box-shadow: 0px 0px 7px 5px;
+    z-index: 1234;
 }
 .container_icons{
     display: flex;
