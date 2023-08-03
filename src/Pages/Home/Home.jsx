@@ -1,8 +1,15 @@
-import {useEffect, useState} from "react";
+import {Component, useEffect, useState} from "react";
 import { getUpcoming } from "../../Services/axios";
 import style from "./home.module.css";
 import img from "../../images/Fondo.jpg";
+import astronauta from '../../images/Astronauta.gif'
 import Loading from "../../Components/Loading/Loading";
+
+
+
+
+
+
 const Home = () => {
 
   const [upcom, setUpcom] = useState (0);
@@ -26,6 +33,7 @@ const Home = () => {
             Here's your best site to watch Movies, Series, Tv programs and much
             more...
           </p>
+    
             <img className={style.img} src={img} alt="" />
         </div>
         <p className={style.upcomming}>Upcomming</p>

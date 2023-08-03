@@ -88,6 +88,20 @@ width: 100vh;
     color: aliceblue;
     text-align: center;
 }
+.carrouselPrimer{
+    color: aliceblue;
+}
+.carrouselSegundo{
+    color: aliceblue;
+}
+.carrouselTercero{
+    color: aliceblue;
+}
+
+
+
+
+
 @media (max-width:768px) {
     .p{
         font-size: 1.2rem;
